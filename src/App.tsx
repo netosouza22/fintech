@@ -1,8 +1,9 @@
 import './Style.css'
+
 import Resumo from './pages/Resumo'
 
 function App() {
- return (<Resumo />)
+    return <Resumo />
 }
 
 export default App
