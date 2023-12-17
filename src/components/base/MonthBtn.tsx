@@ -40,8 +40,12 @@ export function MonthBtn({ monthNumber }: MonthProps) {
     }
 
     return (
-        <button style={btnStyle} onClick={() => setMonthInterval(monthNumber)}>
-            {getMonthName(monthNumber)}
-        </button>
+      <button
+        style={btnStyle}
+        className="filter"
+        onClick={() => setMonthInterval(monthNumber)}
+      >
+        {getMonthName(monthNumber)}
+      </button>
     )
 }

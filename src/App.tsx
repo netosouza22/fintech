@@ -1,9 +1,9 @@
 import './Style.css'
 
-import Resumo from './pages/Resumo'
+import Router from './routes'
 
 function App() {
-    return <Resumo />
+  return <Router />
 }
 
 export default App

@@ -1,5 +1,3 @@
-import { IVenda } from '../../contexts/DataContext'
-
 import {
     CartesianGrid,
     Legend,
@@ -10,6 +8,7 @@ import {
     XAxis,
     YAxis,
 } from 'recharts'
+import { IVenda } from '../../contexts/DataContext'
 
 interface GraficoVendasProps {
     data: IVenda[]
@@ -47,32 +46,34 @@ export function GraficoVendas({ data }: GraficoVendasProps) {
     const dataTransformada = transformData(data)
 
     return (
-        <ResponsiveContainer>
-            <LineChart data={dataTransformada}>
-                <XAxis dataKey="data" />
-                <YAxis />
-                <Tooltip />
-                <Legend />
-                <CartesianGrid stroke="#f5f5f5" />
-                <Line
-                    type="monotone"
-                    dataKey="pago"
-                    stroke="#A36af9"
-                    strokeWidth={3}
-                ></Line>
-                <Line
-                    type="monotone"
-                    dataKey="processando"
-                    stroke="#fbcb21"
-                    strokeWidth={3}
-                ></Line>
-                <Line
-                    type="monotone"
-                    dataKey="falha"
-                    stroke="#000"
-                    strokeWidth={3}
-                ></Line>
-            </LineChart>
-        </ResponsiveContainer>
+        <div className="teste">
+            <ResponsiveContainer height={450}>
+                <LineChart data={dataTransformada}>
+                    <XAxis dataKey="data" />
+                    <YAxis />
+                    <Tooltip />
+                    <Legend />
+                    <CartesianGrid stroke="#f5f5f5" />
+                    <Line
+                        type="monotone"
+                        dataKey="pago"
+                        stroke="#A36af9"
+                        strokeWidth={3}
+                    ></Line>
+                    <Line
+                        type="monotone"
+                        dataKey="processando"
+                        stroke="#fbcb21"
+                        strokeWidth={3}
+                    ></Line>
+                    <Line
+                        type="monotone"
+                        dataKey="falha"
+                        stroke="#000"
+                        strokeWidth={3}
+                    ></Line>
+                </LineChart>
+            </ResponsiveContainer>
+        </div>
     )
 }

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import { DateRange } from '../DateRange'
-import { Months } from '../Months'
+import { SwitchModeBtn } from '../base/SwitchModeBtn'
 
 export function Header() {
     const location = useLocation()
@@ -21,12 +21,14 @@ export function Header() {
     }, [location])
 
     return (
-        <header className="mb">
-            <div className="daterange mb">
-                <DateRange />
-                <h1 className="box bg-3">{title}</h1>
-            </div>
-            <Months />
-        </header>
+      <header className="mb">
+        <div className="daterange mb">
+          <DateRange />
+          <div className="box flex bg-3">
+            <h1>{title}</h1>
+            <SwitchModeBtn />
+          </div>
+        </div>
+      </header>
     )
 }

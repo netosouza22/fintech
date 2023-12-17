@@ -1,59 +1,44 @@
 import { NavLink } from 'react-router-dom'
 import FintechSVG from '../../assets/FintechSVG'
-import configuracoes from '../../assets/icons/configuracoes.svg'
-import contato from '../../assets/icons/contato.svg'
-import resumo from '../../assets/icons/resumo.svg'
-import sair from '../../assets/icons/sair.svg'
-import vendas from '../../assets/icons/vendas.svg'
-import webhooks from '../../assets/icons/webhooks.svg'
+import DashboardIcon from '../icons/Dashboard'
+
+import SalesIcon from '../icons/Sales'
+import SettingsIcon from '../icons/Settings'
+import SignOutIcon from '../icons/SignOut'
 
 export function Sidenav() {
-    return (
-        <nav className="sidenav box bg-3">
-            <FintechSVG title="fintech logo" />
-            <ul>
-                <li>
-                    <span>
-                        <img src={resumo} alt=""></img>
-                    </span>
-                    <NavLink to="/">Resumo</NavLink>
-                </li>
+  return (
+    <nav className="sidenav box bg-3">
+      <FintechSVG title="fintech logo" />
+      <ul>
+        <li className="filter">
+          <span>
+            <DashboardIcon w={22} h={22} />
+          </span>
+          <NavLink to="/">Resumo</NavLink>
+        </li>
 
-                <li>
-                    <span>
-                        <img src={vendas} alt=""></img>
-                    </span>
-                    <NavLink to="/vendas">Vendas</NavLink>
-                </li>
+        <li className="filter">
+          <span>
+            <SalesIcon w={22} h={22} />
+          </span>
+          <NavLink to="/vendas">Vendas</NavLink>
+        </li>
 
-                <li>
-                    <span>
-                        <img src={webhooks} alt=""></img>
-                    </span>
-                    <a href="">Webhooks</a>
-                </li>
+        <li className="filter">
+          <span>
+            <SettingsIcon w={22} h={22} />
+          </span>
+          <a href="">Configurações</a>
+        </li>
 
-                <li>
-                    <span>
-                        <img src={configuracoes} alt=""></img>
-                    </span>
-                    <a href="">Configurações</a>
-                </li>
-
-                <li>
-                    <span>
-                        <img src={contato} alt=""></img>
-                    </span>
-                    <a href="">Contato</a>
-                </li>
-
-                <li>
-                    <span>
-                        <img src={sair} alt=""></img>
-                    </span>
-                    <a href="">Sair</a>
-                </li>
-            </ul>
-        </nav>
-    )
+        <li className="filter">
+          <span>
+            <SignOutIcon w={22} h={22} />
+          </span>
+          <a href="">Sair</a>
+        </li>
+      </ul>
+    </nav>
+  )
 }
