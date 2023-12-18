@@ -2,8 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { RouterProvider } from 'react-router-dom'
 
-import { router } from './Routes/router.tsx'
 import { DataContextProvider } from './contexts/DataContext.tsx'
+import { router } from './routes/router.tsx'
 
 import IsActiveProvider from './providers/IsActiveProvider.tsx'
 import './style.css'
