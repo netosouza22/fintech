@@ -1,6 +1,6 @@
 # Resume/Portfólio
 
-<img src="repository/assets/resume.png" alt="Exemplo imagem">
+<img src="repository/assets/project_img.png" alt="Exemplo imagem">
 
 > Projeto de uma fintech criado para estudar sobre o uso de React + typescript de quebra foi implementado funcionalidades como troca de tema e este projeto para aprofundar os estudos sobre o hook useContext do React js, além do uso do React-router-dom
 
