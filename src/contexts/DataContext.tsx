@@ -23,42 +23,36 @@ export interface IVenda {
 const DataContext = createContext<IDataContext | null>(null)
 
 function getDate(n: number) {
-    console.log(n)
+
     const date = new Date()
     date.setDate(date.getDate() - n)
-
-    console.log('date', date)
 
     const dd = String(date.getDay() === 0 ? 1 : date.getDay()).padStart(2, '0')
     const mm = String(date.getMonth() + 1).padStart(2, '0')
     const yyyy = date.getFullYear()
 
-    console.log('date', `${yyyy}-${mm}-${dd}`)
-
     return `${yyyy}-${mm}-${dd}`
 }
 
 export const DataContextProvider = ({ children }: PropsWithChildren) => {
-    // console.log('getdate - 30', getDate(30))
-    // console.log('getdate - 0', getDate(30))
-    const [inicio, setInicio] = useState(getDate(30))
-    const [final, setFinal] = useState(getDate(0))
+  const [inicio, setInicio] = useState(getDate(30))
+  const [final, setFinal] = useState(getDate(0))
 
-    const params = new URLSearchParams()
-    params.append('inicio', inicio)
-    params.append('final', final)
+  const params = new URLSearchParams()
+  params.append('inicio', inicio)
+  params.append('final', final)
 
-    const { data, loading, error } = useFetch<IVenda[]>(
-        `https://data.origamid.dev/vendas?${params}`
-    )
+  const { data, loading, error } = useFetch<IVenda[]>(
+    `https://data.origamid.dev/vendas?${params}`
+  )
 
-    return (
-        <DataContext.Provider
-            value={{ data, loading, error, inicio, final, setInicio, setFinal }}
-        >
-            {children}
-        </DataContext.Provider>
-    )
+  return (
+    <DataContext.Provider
+      value={{ data, loading, error, inicio, final, setInicio, setFinal }}
+    >
+      {children}
+    </DataContext.Provider>
+  )
 }
 
 export const useData = () => {

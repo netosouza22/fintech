@@ -8,7 +8,6 @@ interface VendaItemProps {
 export function VendaItem({ venda }: VendaItemProps) {
   const navigate = useNavigate()
   const redirectOnClick = async () => {
-    console.log('herer')
     return navigate(`/venda/${venda.id}`)
   }
 
