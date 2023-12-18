@@ -1,27 +1,46 @@
-# React + TypeScript + Vite
+# Resume/Portfólio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img src="repository/assets/resume.png" alt="Exemplo imagem">
 
-Currently, two official plugins are available:
+> Projeto de uma fintech criado para estudar sobre o uso de React + typescript de quebra foi implementado funcionalidades como troca de tema e este projeto para aprofundar os estudos sobre o hook useContext do React js, além do uso do React-router-dom
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 💻 Pré-requisitos
 
-## Expanding the ESLint configuration
+Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+* Ter instalado a versão mais recente do Node js;
 
-- Configure the top-level `parserOptions` property like this:
+## ☕ Onde acessar
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+Você pode acessar o portfolio através desse link:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+
+## 🤝 Colaboradores
+
+Agradecemos às seguintes pessoas que contribuíram para este projeto:
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/63481821" width="100px;" alt="Foto do Neto Sousa no GitHub"/><br>
+        <sub>
+          <b>Neto Sousa</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+## 🛠️ Tecnologias
+
+* [Next Js](https://nextjs.org/)
+* [React Js](https://react.dev/)
+* [Typescript](https://www.typescriptlang.org/)
+* [Tailwind](https://tailwindcss.com/)
+* [React-icons](https://react-icons.github.io/react-icons/)
+
+## 📝 Licença
+
+Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
