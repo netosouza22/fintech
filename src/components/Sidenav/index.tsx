@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink, useMatches } from 'react-router-dom'
 import FintechSVG from '../../assets/FintechSVG'
 import DashboardIcon from '../icons/Dashboard'
 
@@ -7,18 +7,22 @@ import SettingsIcon from '../icons/Settings'
 import SignOutIcon from '../icons/SignOut'
 
 export function Sidenav() {
+  const matches = useMatches()
+
+  const matcher = matches[1].pathname.split('/')[1]
+
   return (
     <nav className="sidenav box bg-3">
       <FintechSVG title="fintech logo" />
       <ul>
-        <li className="filter">
+        <li className={`filter ${matcher === '' ? 'isActive' : ''}`}>
           <span>
             <DashboardIcon w={22} h={22} />
           </span>
           <NavLink to="/">Resumo</NavLink>
         </li>
 
-        <li className="filter">
+        <li className={`filter ${matcher === 'vendas' ? 'isActive' : ''}`}>
           <span>
             <SalesIcon w={22} h={22} />
           </span>
