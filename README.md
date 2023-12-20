@@ -15,7 +15,7 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
   ```
 * Rodar projeto
   ```
-npm run dev
+  npm run dev
   ```
 
 ## ☕ Onde acessar
