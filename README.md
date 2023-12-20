@@ -1,4 +1,4 @@
-# Resume/Portfólio
+# Fintech
 
 <img src="repository/assets/project_img.png" alt="Exemplo imagem">
 
@@ -9,8 +9,14 @@
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 * Ter instalado a versão mais recente do Node js;
-* Comandos:
-  npm run dev
+* Instalar dependências
+  ```
+  npm i
+  ```
+* Rodar projeto
+  ```
+npm run dev
+  ```
 
 ## ☕ Onde acessar
 
