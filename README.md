@@ -9,16 +9,16 @@
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 * Ter instalado a versão mais recente do Node js;
+* Comandos:
+  npm run dev
 
 ## ☕ Onde acessar
 
 Você pode acessar o portfolio através desse link:
 
-
+[fintech](https://fintech-sigma-coral.vercel.app/)
 
 ## 🤝 Colaboradores
-
-Agradecemos às seguintes pessoas que contribuíram para este projeto:
 
 <table>
   <tr>
@@ -38,8 +38,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
 * [Next Js](https://nextjs.org/)
 * [React Js](https://react.dev/)
 * [Typescript](https://www.typescriptlang.org/)
-* [Tailwind](https://tailwindcss.com/)
-* [React-icons](https://react-icons.github.io/react-icons/)
+* [React-router-dom](https://reactrouter.com/en/main)
 
 ## 📝 Licença
 
